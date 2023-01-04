@@ -19,4 +19,4 @@ const beerSchema = new Schema({
 });
 
 // create the Beer model
-module.exports = mongoose.model('Beer', beerSchema)
+module.exports = mongoose.model("Beer", beerSchema);

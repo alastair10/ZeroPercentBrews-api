@@ -2,16 +2,30 @@ const express = require("express");
 
 const router = express.Router();
 
-// get all beers
+// get all
 router.get("/", (req, res) => {
-  res.json({ mssg: "GET all beers" });
+  res.json({ message: "GET all beers" });
 });
 
-// get single beer
+// get one
 router.get("/:id", (re, res) => {
-  res.json({ mssg: "GET single beer" });
+  res.json({ message: "GET single beer" });
 });
 
-router.get("/hello", () => {});
+// post
+router.post("/", (req, res) => {
+  res.json({ message: "POST a new beer" });
+});
+
+// delete
+router.delete("/:id", (req, res) => {
+  res.json({ message: "DELETE a beer" });
+});
+
+// update
+router.patch("/:id", (req, res) => {
+  res.json({ message: "UPDATE a beer" });
+});
 
 module.exports = router;
+ 
