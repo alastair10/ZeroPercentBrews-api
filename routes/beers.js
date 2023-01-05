@@ -9,7 +9,7 @@ const router = express.Router();
 router.get("/", getBeers);
 
 // get one
-router.get("/:id", (re, res) => {
+router.get("/:id", (req, res) => {
   res.json({ message: "GET single beer" });
 });
 
