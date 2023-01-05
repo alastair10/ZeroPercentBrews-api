@@ -8,8 +8,7 @@ beforeEach(() => {
     .connect(mongoDbURL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-    })
-    .then(() => console.log(`MongoDB Connected at ${mongoDbURL}`));
+    });
 });
 
 afterEach(() => {
