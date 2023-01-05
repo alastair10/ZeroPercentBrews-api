@@ -3,11 +3,19 @@ const Beer = require('../models/beerModel')
 
 const getBeers = async (req, res) => {
   
-  const allBeers = await Beer.find();
+  const allBeers = await Beer.find({});
 
   res.status(200).json(allBeers);
 }
 
+const getBeerById = async (req, res) => {
+
+  const { id } = req.params;
+
+  const beerItem = await Beer.findById(id);
+}
+
 module.exports = {
-  getBeers
+  getBeers,
+  beerItem
 }

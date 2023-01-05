@@ -1,6 +1,7 @@
 const express = require("express");
 const {
-  getBeers
+  getBeers,
+  getBeerById
 } = require('../controllers/beerController');
 
 const router = express.Router();
@@ -9,9 +10,7 @@ const router = express.Router();
 router.get("/", getBeers);
 
 // get one
-router.get("/:id", (req, res) => {
-  res.json({ message: "GET single beer" });
-});
+router.get("/:id", getBeerById);
 
 // post
 router.post("/", (req, res) => {
