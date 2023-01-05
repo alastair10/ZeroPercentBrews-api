@@ -1,11 +1,12 @@
 const express = require("express");
+const {
+  getBeers
+} = require('../controllers/beerController');
 
 const router = express.Router();
 
 // get all
-router.get("/", (req, res) => {
-  res.json({ message: "GET all beers" });
-});
+router.get("/", getBeers);
 
 // get one
 router.get("/:id", (re, res) => {
