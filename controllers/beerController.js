@@ -13,9 +13,11 @@ const getBeerById = async (req, res) => {
   const { id } = req.params;
 
   const beerItem = await Beer.findById(id);
+
+  res.status(200).json(beerItem);
 }
 
 module.exports = {
   getBeers,
-  beerItem
+  getBeerById
 }
