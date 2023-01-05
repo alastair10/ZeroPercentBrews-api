@@ -1,36 +1,19 @@
-require("dotenv").config();
+require('dotenv').config();
+const mongoose = require('mongoose');
+const app = require('./app');
 
-const express = require("express");
-const mongoose = require("mongoose");
-const beerRoutes = require("./routes/beers");
-
-const app = express();
-
-//middleware
-app.use(express.json());
-
-app.use((req, res, next) => {
-  console.log(req.path, req.method);
-  next();
-});
-
-// routes
-app.use("/api/beers", beerRoutes);
-
+const mongoDbURL = process.env.MONGO_URI || 'mongodb://localhost:27017/beerDB';
 // connect to db
 mongoose
-  .set("strictQuery", false)
+  .set('strictQuery', false)
   .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => {
-    app.listen(process.env.PORT, () => {
-      console.log(
-        `MongoDB is connected and listening on port ${process.env.PORT}`
-      );
-    });
-  })
   .catch((error) => {
     console.log(error);
   });
+
+app.listen(process.env.PORT, () => {
+  console.log(`App listening on port ${process.env.PORT}`);
+});
