@@ -1,10 +1,12 @@
-require("dotenv").config();
-const mongoose = require("mongoose");
-const Beer = require("../models/beerModel");
-const beerData = require("./seed_beerData");
+require('dotenv').config();
+const mongoose = require('mongoose');
 
-mongoose.set("strictQuery", false);
+const User = require('../models/userModel');
+const userData = require('./userData');
+
+mongoose.set('strictQuery', false);
 const mongoDbURL = process.env.MONGO_URI;
+
 mongoose
   .connect(mongoDbURL, {
     useNewUrlParser: true,
@@ -13,8 +15,8 @@ mongoose
   .then(() => console.log(`MongoDB Connected at ${mongoDbURL}`));
 
 const seedDB = async () => {
-  await Beer.deleteMany({});
-  await Beer.insertMany(beerData);
+  await User.deleteMany({});
+  await User.insertMany(userData);
 };
 
 seedDB().then(() => {
