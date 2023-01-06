@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
@@ -13,14 +13,14 @@ const beerSchema = new Schema({
   country: { type: String, required: true },
   volume: { type: Number, required: true },
   description: { type: String, required: true },
-  reviews: {type: Array, default: [], required: false },
+  reviews: { type: Array, default: [], required: false },
   rating: {
     overall: { type: Number, required: false },
     taste: { type: Number, required: false },
     realness: { type: Number, required: false },
-    value: { type: Number, required: false }
-  }
+    value: { type: Number, required: false },
+  },
 });
 
 // create the Beer model
-module.exports = mongoose.model("Beer", beerSchema);
+module.exports = mongoose.model('Beer', beerSchema);
