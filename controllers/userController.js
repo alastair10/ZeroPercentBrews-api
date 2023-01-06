@@ -3,8 +3,8 @@ const jsonwebtoken = require('jsonwebtoken');
 
 // Generate web token
 const createToken = (_id) => {
-  return jsonwebtoken.sign({ _id }, process.env.SECRET, { expiresIn: '15d' })
-}
+  return jsonwebtoken.sign({ _id }, process.env.SECRET, { expiresIn: '15d' });
+};
 
 // Log in user
 const loginUser = async (req, res) => {
@@ -19,7 +19,6 @@ const loginUser = async (req, res) => {
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
-
 };
 
 // Register user
@@ -35,10 +34,9 @@ const registerUser = async (req, res) => {
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
-}
+};
 
 module.exports = {
   loginUser,
-  registerUser
-}
-
+  registerUser,
+};
