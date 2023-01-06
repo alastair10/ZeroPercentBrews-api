@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-
 const beerRoutes = require('./routes/beers');
+const userRoutes = require('./routes/user');
 
 app.use(express.json());
 app.use(
@@ -12,5 +12,6 @@ app.use(
 );
 
 app.use('/api/beers', beerRoutes);
+app.use('/api/user', userRoutes);
 
 module.exports = app;
