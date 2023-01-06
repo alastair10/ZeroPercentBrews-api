@@ -1,6 +1,6 @@
 const data = [
   {
-    image: '',
+    image: '../images/beer_placeholder.jpg',
     title: 'Adnams Ghost Ship Bottle Beer 0.5%',
     brand: 'Adnams',
     abv: '0.5',
@@ -28,7 +28,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../images/beer_placeholder.jpg',
     title: 'Bavaria 0.0% Beer',
     brand: 'Bavaria',
     abv: '0',
@@ -57,7 +57,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../images/beer_placeholder.jpg',
     title: 'Becks Blue Alcohol Free',
     brand: 'Becks',
     abv: '0.05',
@@ -85,7 +85,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../images/beer_placeholder.jpg',
     title: 'Big Drop Brewing Paradiso Citra Ipa',
     brand: 'Big Drop Brewing Co.',
     abv: '0.5',
@@ -113,7 +113,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../images/moretti.jpg',
     title: 'Birra Moretti Zero',
     brand: 'Birra Moretti',
     abv: '0',
@@ -141,7 +141,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Brewdog Punk Af',
     brand: 'Brewdog',
     abv: '0.5',
@@ -170,7 +170,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Brooklyn Alcohol Free Hoppy Lager',
     brand: 'Brooklyn',
     abv: '0.4',
@@ -198,7 +198,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Corona Cero Alcohol Free',
     brand: 'Corona',
     abv: '0',
@@ -226,7 +226,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Doom Bar Zero Amber Ale',
     brand: 'Doom Bar',
     abv: '0',
@@ -255,7 +255,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/erdinger.jpg',
     title: 'Erdinger Alkoholfrei Grapefruit',
     brand: 'Erdinger',
     abv: '0.3',
@@ -284,7 +284,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Free Damm Lager',
     brand: 'Free Damm',
     abv: '0',
@@ -313,7 +313,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/heineken.jpg',
     title: 'Heineken 0.0 Alcohol Free Lager',
     brand: 'Heineken',
     abv: '0.05',
@@ -341,7 +341,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Kopparberg Alcohol Free Pear Cider',
     brand: 'Kopparberg',
     abv: '0.05',
@@ -370,7 +370,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/kopparberg_strawberry_lime.jpg',
     title: 'Kopparberg Cider Plus Strawberry & Lime Alcohol Free',
     brand: 'Kopparberg',
     abv: '0.05',
@@ -399,7 +399,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Kopparberg Mixed Fruit Alcohol Free',
     brand: 'Kopparberg',
     abv: '0.05',
@@ -428,7 +428,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Leffe Blonde 0% Alcohol Free Beer',
     brand: 'Leffe',
     abv: '0',
@@ -457,7 +457,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/lucky_saint.jpg',
     title: 'Lucky Saint 0.5%',
     brand: 'Lucky Saint',
     abv: '0.5',
@@ -485,7 +485,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Peroni Nastro Azzurro 0.0%',
     brand: 'Peroni',
     abv: '0.05',
@@ -509,7 +509,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/san_miguel.jpg',
     title: 'San Miguel 0.0%',
     brand: 'San Miguel',
     abv: '0',
@@ -518,7 +518,7 @@ const data = [
     ingredients: 'Water, Barley Malt, Hops, Flavourings',
     country: 'Spain',
     volume: '330',
-    description: 'TEXT',
+    description: 'A refreshingly crisp choice, with tantalising hops.',
     reviews: [
       {
         author: "alastair",
@@ -533,7 +533,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Shipyard Low Tide Pale Ale',
     brand: 'Shipyard',
     abv: '0.5',
@@ -561,7 +561,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Stella Artois Premium Alcohol Free Lager',
     brand: 'Stella Artois',
     abv: '0',
@@ -589,7 +589,7 @@ const data = [
     }
   },
   {
-    image: '',
+    image: '../../images/beer_placeholder.jpg',
     title: 'Thatchers Zero Somerset Cider',
     brand: 'Thatchers',
     abv: '0.05',

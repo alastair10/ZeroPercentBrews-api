@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 const Beer = require("../models/beerModel");
-const beerData = require("./seed_beerData");
+const beerData = require("./beerData");
 
 mongoose.set('strictQuery', false);
 const mongoDbURL = process.env.MONGO_URI;
