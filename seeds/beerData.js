@@ -1,6 +1,6 @@
 const data = [
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../images/beer_placeholder.jpg',
     title: 'Adnams Ghost Ship Bottle Beer 0.5%',
     brand: 'Adnams',
     abv: '0.5',
@@ -28,7 +28,7 @@ const data = [
     }
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../images/beer_placeholder.jpg',
     title: 'Bavaria 0.0% Beer',
     brand: 'Bavaria',
     abv: '0',
@@ -57,7 +57,7 @@ const data = [
     }
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../images/beer_placeholder.jpg',
     title: 'Becks Blue Alcohol Free',
     brand: 'Becks',
     abv: '0.05',
@@ -85,7 +85,7 @@ const data = [
     }
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../images/beer_placeholder.jpg',
     title: 'Big Drop Brewing Paradiso Citra Ipa',
     brand: 'Big Drop Brewing Co.',
     abv: '0.5',
@@ -113,7 +113,7 @@ const data = [
     }
   },
   {
-    image: '../../images/moretti.jpg',
+    image: '../images/moretti.jpg',
     title: 'Birra Moretti Zero',
     brand: 'Birra Moretti',
     abv: '0',
