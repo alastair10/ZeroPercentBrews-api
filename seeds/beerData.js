@@ -518,7 +518,7 @@ const data = [
     ingredients: 'Water, Barley Malt, Hops, Flavourings',
     country: 'Spain',
     volume: '330',
-    description: 'TEXT',
+    description: 'A refreshingly crisp choice, with tantalising hops.',
     reviews: [
       {
         author: "alastair",
