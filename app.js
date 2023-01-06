@@ -11,6 +11,16 @@ app.use(
   })
 );
 
+app.all('*', (req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  if ('OPTIONS' == req.method) {
+  res.sendStatus(200);
+  } else {
+    next();
+  }
+});
+
 app.use('/api/beers', beerRoutes);
 app.use('/api/user', userRoutes);
 
