@@ -17,21 +17,19 @@ const getBeerById = async (req, res) => {
 // Add review to single beer
 const addReview = async (req, res) => {
   const { id } = req.params;
-  
-  const reviewData = req.body;
+  const user_id = req.user._id
+  const { review, rating } = req.body;
 
-  if (!reviewData.body) {
+  if (!review) {
     return res.status(400).json({ error: 'Review cannot be empty' });
   }
- 
 
   const beer = await Beer.findByIdAndUpdate(
       { _id: id },
-      { $addToSet: { reviews: reviewData } },
+      { $addToSet: { reviews: review }, rating: rating },
       { new: true }
         );
 
-  const user_id = req.user_id;
   res.status(200).json({ message: "OK", user_id: user_id, beer: beer });
 };
 

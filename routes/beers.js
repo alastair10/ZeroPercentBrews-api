@@ -15,7 +15,7 @@ router.get("/", getBeers);
 router.get("/:id", getBeerById);
 
 // add review to beer
-router.patch("/:id", requireAuth, addReview);
+router.patch("/:id/reviews", requireAuth, addReview);
 
 module.exports = router;
  
