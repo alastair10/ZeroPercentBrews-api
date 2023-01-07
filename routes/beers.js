@@ -1,8 +1,10 @@
 const express = require("express");
 const {
   getBeers,
-  getBeerById
+  getBeerById,
+  addReview
 } = require('../controllers/beerController');
+const requireAuth = require("../middleware/requireAuth");
 
 const router = express.Router();
 
@@ -11,6 +13,9 @@ router.get("/", getBeers);
 
 // get one
 router.get("/:id", getBeerById);
+
+// add review to beer
+router.patch("/:id", requireAuth, addReview);
 
 module.exports = router;
  
