@@ -13,7 +13,16 @@ const beerSchema = new Schema({
   country: { type: String, required: true },
   volume: { type: Number, required: true },
   description: { type: String, required: true },
-  reviews: { type: Array, default: [], required: false },
+  reviews: [
+    new Schema({
+      user_id: {
+        type: mongoose.Types.ObjectId, ref: "User",
+        required: true
+      },
+      body: { type: String, required: true }
+    },
+      { timestamps: true })
+  ],
   rating: {
     overall: { type: Number, required: false },
     taste: { type: Number, required: false },
