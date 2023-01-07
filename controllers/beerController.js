@@ -26,8 +26,8 @@ const addReview = async (req, res) => {
       { new: true }
         );
 
-  const token = await TokenGenerator.jsonwebtoken(req.user_id);
-  res.status(202).json({ message: "OK", token: token, beer: beer });
+  const user_id = req.user_id;
+  res.status(200).json({ message: "OK", user_id: user_id, beer: beer });
 };
 
 module.exports = {
