@@ -20,6 +20,11 @@ const addReview = async (req, res) => {
   
   const reviewData = req.body;
 
+  if (!reviewData.body) {
+    return res.status(400).json({ error: 'Review cannot be empty' });
+  }
+ 
+
   const beer = await Beer.findByIdAndUpdate(
       { _id: id },
       { $addToSet: { reviews: reviewData } },
