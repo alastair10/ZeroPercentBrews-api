@@ -25,7 +25,8 @@ const data = [
       taste: 5,
       value: 3,
       realness: 5
-    }
+    },
+    kegs: 1
   },
   {
     image: '../images/beer_placeholder.jpg',
@@ -54,7 +55,8 @@ const data = [
       taste: 4,
       value: 3,
       realness: 3
-    }
+    },
+    kegs: 2
   },
   {
     image: '../images/beer_placeholder.jpg',
@@ -82,7 +84,8 @@ const data = [
       taste: 2,
       value: 3,
       realness: 2
-    }
+    },
+    kegs: 3
   },
   {
     image: '../images/beer_placeholder.jpg',
@@ -110,7 +113,8 @@ const data = [
       taste: 2,
       value: 1,
       realness: 4
-    }
+    },
+    kegs: 4
   },
   {
     image: '../images/moretti.jpg',
@@ -138,7 +142,8 @@ const data = [
       taste: 5,
       value: 4,
       realness: 5
-    }
+    },
+    kegs: 5
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -167,7 +172,8 @@ const data = [
       taste: 4,
       value: 4,
       realness: 5
-    }
+    },
+    kegs: 6
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -195,7 +201,8 @@ const data = [
       taste: 4,
       value: 3,
       realness: 4
-    }
+    },
+    kegs: 7
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -223,7 +230,8 @@ const data = [
       taste: 5,
       value: 5,
       realness: 5
-    }
+    },
+    kegs: 8
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -252,7 +260,8 @@ const data = [
       taste: 2,
       value: 2,
       realness: 2
-    }
+    },
+    kegs: 9
   },
   {
     image: '../../images/erdinger.jpg',
@@ -281,7 +290,8 @@ const data = [
       taste: 3,
       value: 3,
       realness: 3
-    }
+    },
+    kegs: 15
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -310,7 +320,8 @@ const data = [
       taste: 4,
       value: 5,
       realness: 4
-    }
+    },
+    kegs: 6
   },
   {
     image: '../../images/heineken.jpg',
@@ -338,7 +349,8 @@ const data = [
       taste: 3,
       value: 3,
       realness: 4
-    }
+    },
+    kegs: 3
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -367,7 +379,8 @@ const data = [
       taste: 5,
       value: 3,
       realness: 3
-    }
+    },
+    kegs: 9
   },
   {
     image: '../../images/kopparberg_strawberry_lime.jpg',
@@ -396,7 +409,8 @@ const data = [
       taste: 3,
       value: 3,
       realness: 3
-    }
+    },
+    kegs: 10
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -425,7 +439,8 @@ const data = [
       taste: 3,
       value: 3,
       realness: 3
-    }
+    },
+    kegs: 4
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -454,7 +469,8 @@ const data = [
       taste: 4,
       value: 4,
       realness: 5
-    }
+    },
+    kegs: 5
   },
   {
     image: '../../images/lucky_saint.jpg',
@@ -482,7 +498,8 @@ const data = [
       taste: 5,
       value: 4,
       realness: 5
-    }
+    },
+    kegs: 4
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -506,7 +523,8 @@ const data = [
       taste: 5,
       value: 3,
       realness: 5
-    }
+    },
+    kegs: 3
   },
   {
     image: '../../images/san_miguel.jpg',
@@ -530,7 +548,8 @@ const data = [
       taste: 5,
       value: 3,
       realness: 5
-    }
+    },
+    kegs: 2
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -558,7 +577,8 @@ const data = [
       taste: 4,
       value: 4,
       realness: 5
-    }
+    },
+    kegs: 1
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -586,7 +606,8 @@ const data = [
       taste: 4,
       value: 2,
       realness: 4
-    }
+    },
+    kegs: 2
   },
   {
     image: '../../images/beer_placeholder.jpg',
@@ -614,7 +635,8 @@ const data = [
       taste: 3,
       value: 4,
       realness: 4
-    }
+    },
+    kegs: 3
   },
 ];
 
