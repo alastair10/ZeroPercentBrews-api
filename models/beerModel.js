@@ -13,7 +13,7 @@ const beerSchema = new Schema({
   country: { type: String, required: true },
   volume: { type: Number, required: true },
   description: { type: String, required: true },
-  reviews: [
+  comments: [
     new Schema({
       user_id: {
         type: mongoose.Types.ObjectId, ref: "User",
@@ -29,6 +29,7 @@ const beerSchema = new Schema({
     realness: { type: Number, required: false },
     value: { type: Number, required: false },
   },
+  kegs: { type: Number, require: false}
 });
 
 // create the Beer model

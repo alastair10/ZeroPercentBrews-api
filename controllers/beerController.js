@@ -14,27 +14,48 @@ const getBeerById = async (req, res) => {
   res.status(200).json(beerItem);
 };
 
-// Add review to single beer
-const addReview = async (req, res) => {
+// Add comment to single beer
+const addComment = async (req, res) => {
   const { id } = req.params;
   const user_id = req.user._id
-  const { review, rating } = req.body;
+  const { comment } = req.body;
 
-  if (!review) {
-    return res.status(400).json({ error: 'Review cannot be empty' });
+  if (!comment) {
+    return res.status(400).json({ error: 'Comment cannot be empty' });
   }
 
   const beer = await Beer.findByIdAndUpdate(
       { _id: id },
-      { $addToSet: { reviews: review }, rating: rating },
+      { $addToSet: { comments: comment } },
       { new: true }
         );
 
   res.status(200).json({ message: "OK", user_id: user_id, beer: beer });
 };
 
+// Update kegs (votes)
+const updateKegVotes = async (req, res) => {
+  const { id } = req.params;
+  const user_id = req.user._id
+  const { kegs } = req.body;
+
+  if (!kegs) {
+    return res.status(400).json({ error: 'Kegs cannot be empty' });
+  }
+
+  const beer = await Beer.findByIdAndUpdate(
+    { _id: id },
+    { $set: { kegs: kegs } },
+    { new: true }
+      );
+  
+  res.status(200).json({ message: "OK", user_id: user_id, beer: beer });
+
+};
+
 module.exports = {
   getBeers,
   getBeerById,
-  addReview
+  addComment,
+  updateKegVotes
 };

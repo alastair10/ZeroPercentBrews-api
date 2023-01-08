@@ -10,13 +10,13 @@ const data = [
     country: 'UK',
     volume: '500',
     description: 'An un-boo-lievably crisp taste. Will raise your spirits if shipwrecked.',
-    reviews: [
+    comments: [
       {
-        author: "alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "Makes me smile!"
       },
       {
-        author: "joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Is this vegan? Unsure..."
       }
     ],
@@ -39,13 +39,13 @@ const data = [
     country: 'Netherlands',
     volume: '330',
     description: 'Definitely not the Wurst. You do not need a Wiesn to try this.',
-    reviews: [
+    comments: [
       {
-        author: "adon",
+        user_id: '63b84adaaf2c390d49703c8e',      
         body: "Light and refreshing. Just my cuppa beer."
       },
       {
-        author: "Tom",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Goes well with a cheese and pickle sandwich. No mayo."
       }
     ],
@@ -67,13 +67,13 @@ const data = [
     country: 'Germany',
     volume: '330',
     description: 'You don\'t have to be Posh to love a Becks.',
-    reviews: [
+    comments: [
       {
-        author: "Alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "I drink this on the way home from my corporate job."
       },
       {
-        author: "Tom",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Too mainstream for my liking. They were better when independently owned."
       }
     ],
@@ -95,13 +95,13 @@ const data = [
     country: 'UK',
     volume: '330',
     description: 'Citrusy undertones. Crisp taste. Will not leave you feeling bitter.',
-    reviews: [
+    comments: [
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',      
         body: "Not usually a fan of fruity beers but this is okay."
       },
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Big Drop? More like Big Flop."
       }
     ],
@@ -123,13 +123,13 @@ const data = [
     country: 'Italy',
     volume: '330',
     description: 'Quality beer, authentic Italian taste.',
-    reviews: [
+    comments: [
       {
-        author: "Tom",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Love me a Moretti I do. Glad they do a 0% one now"
       },
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Brilliant beer. No complaints. I promise."
       }
     ],
@@ -152,13 +152,13 @@ const data = [
     country: 'UK',
     volume: '330',
     description: 'For the mainstream beer rebels who love to conform against the grain.',
-    reviews: [
+    comments: [
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',      
         body: "This one is a little strong for me. I felt tipsy after one."
       },
       {
-        author: "Alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "Nice and chill. Like me."
       }
     ],
@@ -180,13 +180,13 @@ const data = [
     country: 'EU',
     volume: '330',
     description: 'Pale caramel notes, with a piney finish.',
-    reviews: [
+    comments: [
       {
-        author: "Alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "I'm American and I don't even know if this is from Brooklyn?!"
       },
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "This is quite nice."
       }
     ],
@@ -208,13 +208,13 @@ const data = [
     country: 'Belgium',
     volume: '330',
     description: 'Quench your cerveza cravings with a crip Corona Cero.',
-    reviews: [
+    comments: [
       {
-        author: "Tom",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Perfect for a warm summer sesh."
       },
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',      
         body: "Light and refreshing. Lovely."
       }
     ],
@@ -237,13 +237,13 @@ const data = [
     country: 'UK',
     volume: '500',
     description: 'Perfectly balanced beer with a subtle taste',
-    reviews: [
+    comments: [
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Shocking. Never again"
       },
       {
-        author: "alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "I am a nice person but can't think of something positive to say."
       }
     ],
@@ -266,13 +266,13 @@ const data = [
     country: 'Germany',
     volume: '330',
     description: 'Freshingly good after a light jog on a warm summer\'s day.',
-    reviews: [
+    comments: [
       {
-        author: "Tom",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "A New Gen Beer."
       },
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',      
         body: "Once tried it after Berlin half marathon, it was nice but also free..."
       }
     ],
@@ -295,13 +295,13 @@ const data = [
     country: 'Spain',
     volume: '330',
         description: 'Brewed in Barcelona with top quality ingredients.',
-    reviews: [
+    comments: [
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',      
         body: "Perfect on a beach in Barcelona"
       },
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "This one is alright!"
       }
     ],
@@ -323,13 +323,13 @@ const data = [
     country: 'Scotland',
     volume: '330',
         description: 'Fruity and refreshing malt notes. Incredibly light and refreshing.',
-    reviews: [
+    comments: [
       {
-        author: "alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "it is definitely better than they used to make it years ago"
       },
       {
-        author: "Tom",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Fruiiiiiiiitty and freeeeeeshhh."
       }
     ],
@@ -352,13 +352,13 @@ const data = [
     country: 'Sweden',
     volume: '500',
     description: 'Sweet and revitalising, refreshingly pear.',
-    reviews: [
+    comments: [
       {
-        author: "alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "I drink at least two a day"
       },
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "I prefer the strawberry"
       }
     ],
@@ -381,13 +381,13 @@ const data = [
     country: 'Sweden',
     volume: '500',
     description: 'A delicious mix of raspberry and blackcurrant',
-    reviews: [
+    comments: [
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Could do with more strawberry"
       },
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',      
         body: "Tastes like fizzy pop"
       }
     ],
@@ -410,13 +410,13 @@ const data = [
     country: 'Sweden',
     volume: '500',
     description: 'A delicious mix of raspberry and blackcurrant',
-    reviews: [
+    comments: [
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',      
         body: "Quite sweet but it's nice"
       },
       {
-        author: "alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "Lovely lovely lovely"
       }
     ],
@@ -439,13 +439,13 @@ const data = [
     country: 'Belgium',
     volume: '250',
     description: 'Rich, fruity notes and full of character',
-    reviews: [
+    comments: [
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "Nice but you need it in the right glass"
       },
       {
-        author: "alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "reminds me of Belgium"
       }
     ],
@@ -467,13 +467,13 @@ const data = [
     country: 'Germany',
     volume: '330',
     description: 'Not for the Saint-Hearted. Bavarianly biscuity taste.',
-    reviews: [
+    comments: [
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',      
         body: "This is one of my faves. Gets me a bit tipsy!"
       },
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',     
         body: "One of my go to brands now."
       }
     ],
@@ -495,9 +495,9 @@ const data = [
     country: 'Italy',
     volume: '330',
     description: 'TEXT',
-    reviews: [
+    comments: [
       {
-        author: "alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "i love this beer!!"
       }
     ],
@@ -519,9 +519,9 @@ const data = [
     country: 'Spain',
     volume: '330',
     description: 'A refreshingly crisp choice, with tantalising hops.',
-    reviews: [
+    comments: [
       {
-        author: "alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "i love this beer!!"
       }
     ],
@@ -543,13 +543,13 @@ const data = [
     country: 'UK',
     volume: '500',
     description: 'The tide might be low but this will raise your spirits!',
-    reviews: [
+    comments: [
       {
-        author: "Joe",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "Great for a pale ale"
       },
       {
-        author: "alastair",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "niceeeee"
       }
     ],
@@ -571,13 +571,13 @@ const data = [
     country: 'Belgium',
     volume: '330',
     description: 'Hoppy, refreshing and no where',
-    reviews: [
+    comments: [
       {
-        author: "Tom",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "Nice nice nice"
       },
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "Not a huge fan"
       }
     ],
@@ -599,13 +599,13 @@ const data = [
     country: 'UK',
     volume: '500',
     description: 'Medium-dry taste, bursting with appley goodness.',
-    reviews: [
+    comments: [
       {
-        author: "Adon",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "Lovely on a summer's evening!"
       },
       {
-        author: "Tom",
+        user_id: '63b84adaaf2c390d49703c8e',
         body: "Chillllllllll"
       }
     ],

@@ -2,7 +2,8 @@ const express = require("express");
 const {
   getBeers,
   getBeerById,
-  addReview
+  addComment,
+  updateKegVotes
 } = require('../controllers/beerController');
 const requireAuth = require("../middleware/requireAuth");
 
@@ -15,7 +16,10 @@ router.get("/", getBeers);
 router.get("/:id", getBeerById);
 
 // add review to beer
-router.patch("/:id/reviews", requireAuth, addReview);
+router.patch("/:id/comments", requireAuth, addComment);
+
+// update kegs (votes)
+router.patch("/:id/kegs", requireAuth, updateKegVotes);
 
 module.exports = router;
  
