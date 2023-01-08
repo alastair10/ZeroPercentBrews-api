@@ -33,8 +33,29 @@ const addComment = async (req, res) => {
   res.status(200).json({ message: "OK", user_id: user_id, beer: beer });
 };
 
+// Update kegs (votes)
+const updateKegVotes = async (req, res) => {
+  const { id } = req.params;
+  const user_id = req.user._id
+  const { kegs } = req.body;
+
+  if (!kegs) {
+    return res.status(400).json({ error: 'Kegs cannot be empty' });
+  }
+
+  const beer = await Beer.findByIdAndUpdate(
+    { _id: id },
+    { $set: { kegs: kegs } },
+    { new: true }
+      );
+  
+  res.status(200).json({ message: "OK", user_id: user_id, beer: beer });
+
+};
+
 module.exports = {
   getBeers,
   getBeerById,
-  addComment
+  addComment,
+  updateKegVotes
 };

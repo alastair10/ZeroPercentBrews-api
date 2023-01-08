@@ -3,7 +3,7 @@ const {
   getBeers,
   getBeerById,
   addComment,
-  handleKegVote
+  updateKegVotes
 } = require('../controllers/beerController');
 const requireAuth = require("../middleware/requireAuth");
 
@@ -19,7 +19,7 @@ router.get("/:id", getBeerById);
 router.patch("/:id/comments", requireAuth, addComment);
 
 // update kegs (votes)
-router.patch("/:id/kegs", requireAuth, handleKegVote);
+router.patch("/:id/kegs", requireAuth, updateKegVotes);
 
 module.exports = router;
  
