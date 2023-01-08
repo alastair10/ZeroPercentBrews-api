@@ -26,7 +26,7 @@ const addComment = async (req, res) => {
 
   const beer = await Beer.findByIdAndUpdate(
       { _id: id },
-      { $addToSet: { comment } },
+      { $addToSet: { comments: comment } },
       { new: true }
         );
 
