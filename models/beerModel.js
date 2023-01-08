@@ -24,6 +24,12 @@ const beerSchema = new Schema({
       { timestamps: true })
   ],
   kegs: { type: Number, required: false },
+  rating: {
+    overall: { type: Number, required: false },
+    taste: { type: Number, required: false },
+    realness: { type: Number, required: false },
+    value: { type: Number, required: false },
+  },
 });
 
 // create the Beer model
