@@ -72,6 +72,12 @@ const getBeersByType = async (req, res) => {
   res.status(200).json(beersByType);
 };
 
+// Get beers default listing
+const getBeersDefault = async (req, res) => {
+  const defaultBeers = await Beer.find({ default: true});
+  res.status(200).json(defaultBeers);
+}
+
 module.exports = {
   getBeers,
   getBeerById,
@@ -79,5 +85,6 @@ module.exports = {
   updateKegVotes,
   getLowCalBeers,
   getMostLikedBeers,
-  getBeersByType
+  getBeersByType,
+  getBeersDefault
 };

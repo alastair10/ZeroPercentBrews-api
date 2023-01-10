@@ -6,7 +6,8 @@ const {
   updateKegVotes,
   getLowCalBeers,
   getMostLikedBeers,
-  getBeersByType
+  getBeersByType,
+  getBeersDefault
 } = require('../controllers/beerController');
 const requireAuth = require("../middleware/requireAuth");
 
@@ -16,7 +17,7 @@ const router = express.Router();
 router.get("/", getBeers);
 
 // get default
-router.get("/", getBeersDefault)
+router.get("/default", getBeersDefault);
 
 // get low-calorie beers
 router.get("/low-cal", getLowCalBeers);
