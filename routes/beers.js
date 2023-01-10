@@ -21,5 +21,8 @@ router.patch("/:id/comments", requireAuth, addComment);
 // update kegs (votes)
 router.patch("/:id/kegs", requireAuth, updateKegVotes);
 
+// get low-calorie beers
+router.get("/low-cal", getLowCalBeers);
+
 module.exports = router;
  
