@@ -1,4 +1,5 @@
 const User = require('../models/userModel');
+const Beer = require('../models/beerModel');
 const jsonwebtoken = require('jsonwebtoken');
 
 // Generate web token
@@ -37,7 +38,14 @@ const registerUser = async (req, res) => {
 // Get user by its ID
 const getUser = async (req, res) => {
   const { id } = req.params;
-  const user = await User.findById(id);
+
+  const user = await User.findById(id).populate("saved.beer_id");
+  
+  // user.saved.populate({ path: "_id", select: "title brand"});
+  
+  // const saved = user.saved.map(
+  //   (beer) => beer = Beer.findOne('_id').populate([{title: 'title'}])
+  // );
 
   if (!user) {
     return res.status(400).json({ error: "User does not exist"});
