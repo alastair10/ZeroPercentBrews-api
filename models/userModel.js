@@ -20,7 +20,9 @@ const userSchema = new Schema(
       required: true,
       unique: false,
     },
-    saved: { type: Array, require: true},
+    saved: [
+      {type: mongoose.Types.ObjectId, ref: "Beer"}
+    ],
   },
   { timestamps: true }
 );

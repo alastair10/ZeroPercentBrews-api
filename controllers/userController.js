@@ -40,7 +40,9 @@ const registerUser = async (req, res) => {
 const getUser = async (req, res) => {
   const { id } = req.params;
 
-  const user = await User.findById(id)
+  // const user = await User.findById(id)
+
+  const user = await User.findById(id).populate('saved')
   
   if (!user) {
     return res.status(400).json({ error: "User does not exist"});
