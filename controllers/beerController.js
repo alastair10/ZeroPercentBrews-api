@@ -17,7 +17,7 @@ const getBeerById = async (req, res) => {
 // Add comment to single beer
 const addComment = async (req, res) => {
   const { id } = req.params;
-  const user_id = req.user._id
+  const user_id = req.user._id;
   const { comment } = req.body;
 
   if (!comment) {
@@ -36,7 +36,7 @@ const addComment = async (req, res) => {
 // Update kegs (votes)
 const updateKegVotes = async (req, res) => {
   const { id } = req.params;
-  const user_id = req.user._id
+  const user_id = req.user._id;
   const { kegs } = req.body;
 
   if (!kegs) {

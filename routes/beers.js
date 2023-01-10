@@ -8,7 +8,7 @@ const {
   getMostLikedBeers,
   getBeersByType,
   getBeersDefault
-} = require('../controllers/beerController');
+} = require("../controllers/beerController");
 const requireAuth = require("../middleware/requireAuth");
 
 const router = express.Router();
@@ -37,6 +37,4 @@ router.patch("/:id/comments", requireAuth, addComment);
 // update kegs (votes)
 router.patch("/:id/kegs", requireAuth, updateKegVotes);
 
-
 module.exports = router;
- 
