@@ -6,14 +6,18 @@ const {
   updateKegVotes,
   getLowCalBeers,
   getMostLikedBeers,
-  getBeersByType
-} = require('../controllers/beerController');
+  getBeersByType,
+  getBeersDefault
+} = require("../controllers/beerController");
 const requireAuth = require("../middleware/requireAuth");
 
 const router = express.Router();
 
 // get all
 router.get("/", getBeers);
+
+// get default
+router.get("/default", getBeersDefault);
 
 // get low-calorie beers
 router.get("/low-cal", getLowCalBeers);
@@ -33,6 +37,4 @@ router.patch("/:id/comments", requireAuth, addComment);
 // update kegs (votes)
 router.patch("/:id/kegs", requireAuth, updateKegVotes);
 
-
 module.exports = router;
- 
