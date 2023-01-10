@@ -15,6 +15,9 @@ const router = express.Router();
 // get all
 router.get("/", getBeers);
 
+// get default
+router.get("/", getBeersDefault)
+
 // get low-calorie beers
 router.get("/low-cal", getLowCalBeers);
 
