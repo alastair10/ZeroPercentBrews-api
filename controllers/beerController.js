@@ -10,7 +10,7 @@ const getBeers = async (req, res) => {
 // Get single beer by ID
 const getBeerById = async (req, res) => {
   const { id } = req.params;
-  const beerItem = await Beer.findById(id);
+  const beerItem = await Beer.findById(id).populate({ path: 'comments.user_id', select: 'username _id' });
   res.status(200).json(beerItem);
 };
 
