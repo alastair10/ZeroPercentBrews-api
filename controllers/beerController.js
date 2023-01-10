@@ -74,7 +74,7 @@ const getBeersByType = async (req, res) => {
 
 // Get beers default listing
 const getBeersDefault = async (req, res) => {
-  const defaultBeers = await Beer.find({ default: true});
+  const defaultBeers = await Beer.find({ homepage: true});
   res.status(200).json(defaultBeers);
 }
 
