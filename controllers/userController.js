@@ -34,7 +34,21 @@ const registerUser = async (req, res) => {
   }
 };
 
+// Get user by its ID
+const getUser = async (req, res) => {
+  const { id } = req.params;
+  const user = await User.findById(id);
+
+  if (!user) {
+    return res.status(400).json({ error: "User does not exist"});
+  }
+
+  res.status(200).json({message: "OK", username: user.username, email: user.email, saved: user.saved})
+
+}
+
 module.exports = {
   loginUser,
   registerUser,
+  getUser
 };
