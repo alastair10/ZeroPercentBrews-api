@@ -53,9 +53,31 @@ const updateKegVotes = async (req, res) => {
 
 };
 
+// Get top lowest calorie beers
+const getLowCalBeers = async (req, res) => {
+  const lowCalBeers = await Beer.find({}).sort('calories').limit(12);
+  res.status(200).json(lowCalBeers);
+};
+
+// Get top most liked beers
+const getMostLikedBeers = async (req, res) => {
+  const mostLikedBeers = await Beer.find({}).sort('-kegs').limit(12);
+  res.status(200).json(mostLikedBeers);
+};
+
+// Get beers by type
+const getBeersByType = async (req, res) => {
+  const { type } = req.params;
+  const beersByType = await Beer.find({ type: type });
+  res.status(200).json(beersByType);
+};
+
 module.exports = {
   getBeers,
   getBeerById,
   addComment,
-  updateKegVotes
+  updateKegVotes,
+  getLowCalBeers,
+  getMostLikedBeers,
+  getBeersByType
 };
