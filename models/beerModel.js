@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const User = require('../models/userModel');
 
 const Schema = mongoose.Schema;
 
@@ -14,14 +15,7 @@ const beerSchema = new Schema({
   volume: { type: Number, required: true },
   description: { type: String, required: true },
   comments: [
-    new Schema({
-      user_id: {
-        type: mongoose.Types.ObjectId, ref: "User",
-        required: true
-      },
-      body: { type: String, required: true }
-    },
-      { timestamps: true })
+    {type: mongoose.Types.ObjectId, ref: "User"}
   ],
   rating: {
     overall: { type: Number, required: false },
