@@ -1,6 +1,7 @@
 const User = require('../models/userModel');
 const Beer = require('../models/beerModel');
 const jsonwebtoken = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 
 
 // Generate web token
@@ -81,10 +82,23 @@ const updateSaved = async (req, res) => {
     );
 
     res.status(200).json({ message: "OK", user_id: user._id, saved: user.saved});
-  }
- 
+  };
+};
 
-  
+const updateCredentials = async (req, res) => {
+  const { id } = req.params;
+  const { newPassword } = req.body;
+
+  const salt = await bcrypt.genSalt(10);
+  const hash = await bcrypt.hash(newPassword, salt);
+
+  const user = await User.findByIdAndUpdate(
+    { _id: id },
+    { $set: { password: hash }},
+    { new: true }
+  );
+
+  res.status(200).json({ message: "Password updated", user_id: user._id});
 
 };
 
@@ -92,5 +106,6 @@ module.exports = {
   loginUser,
   registerUser,
   getUser,
-  updateSaved
+  updateSaved,
+  updateCredentials
 };
