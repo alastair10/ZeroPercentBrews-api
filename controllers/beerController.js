@@ -53,9 +53,16 @@ const updateKegVotes = async (req, res) => {
 
 };
 
+// Get top lowest calorie beers
+const getLowCalBeers = async (req, res) => {
+  const lowCalBeers = await Beer.find({}).sort('calories').limit(12);
+  res.status(200).json(lowCalBeers);
+};
+
 module.exports = {
   getBeers,
   getBeerById,
   addComment,
-  updateKegVotes
+  updateKegVotes,
+  getLowCalBeers
 };
