@@ -65,11 +65,19 @@ const getMostLikedBeers = async (req, res) => {
   res.status(200).json(mostLikedBeers);
 };
 
+// Get beers by type
+const getBeersByType = async (req, res) => {
+  const { type } = req.params;
+  const beersByType = await Beer.find({ type: type });
+  res.status(200).json(beersByType);
+};
+
 module.exports = {
   getBeers,
   getBeerById,
   addComment,
   updateKegVotes,
   getLowCalBeers,
-  getMostLikedBeers
+  getMostLikedBeers,
+  getBeersByType
 };
