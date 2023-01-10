@@ -1,5 +1,8 @@
 const User = require('../models/userModel');
+const Beer = require('../models/beerModel');
 const jsonwebtoken = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
+
 
 // Generate web token
 const createToken = (_id) => {
@@ -34,7 +37,74 @@ const registerUser = async (req, res) => {
   }
 };
 
+// Get user by its ID
+const getUser = async (req, res) => {
+  const { id } = req.params;
+
+  // const user = await User.findById(id)
+
+  const user = await User.findById(id).populate('saved')
+  
+  if (!user) {
+    return res.status(400).json({ error: "User does not exist"});
+  }
+
+  res.status(200).json({message: "OK", username: user.username, email: user.email, saved: user.saved})
+
+};
+
+// Update user saved beers by ID
+const updateSaved = async (req, res) => {
+  const { id } = req.params;
+  const { beer_id, isSaved } = req.body;
+
+  if (!beer_id) {
+    return res.status(400).json({ error: 'Must provide a beer_id' });
+  };
+
+  if (isSaved) {
+    const user = await User.findByIdAndUpdate(
+      { _id: id },
+      { $pullAll: { saved: [beer_id] }},
+      { new: true }
+    );
+
+    res.status(200).json({ message: "Beer removed from saved", user_id: user._id, saved: user.saved});
+
+  } else {
+    const beer = await Beer.findById(beer_id);
+
+    const user = await User.findByIdAndUpdate(
+      { _id: id },
+      { $addToSet: { saved: beer }},
+      { new: true }
+    );
+
+    res.status(200).json({ message: "Beer saved", user_id: user._id, saved: user.saved});
+  };
+};
+
+const updateCredentials = async (req, res) => {
+  const { id } = req.params;
+  const { newPassword } = req.body;
+
+  const salt = await bcrypt.genSalt(10);
+  const hash = await bcrypt.hash(newPassword, salt);
+
+  const user = await User.findByIdAndUpdate(
+    { _id: id },
+    { $set: { password: hash }},
+    { new: true }
+  );
+
+  res.status(200).json({ message: "Password updated", user_id: user._id});
+
+};
+
 module.exports = {
   loginUser,
   registerUser,
+  getUser,
+  updateSaved,
+  updateCredentials
 };

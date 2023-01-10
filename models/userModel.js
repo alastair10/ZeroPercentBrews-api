@@ -20,7 +20,9 @@ const userSchema = new Schema(
       required: true,
       unique: false,
     },
-    favourites: { type: Array, default: [], required: false },
+    saved: [
+      {type: mongoose.Types.ObjectId, ref: "Beer"}
+    ],
   },
   { timestamps: true }
 );
