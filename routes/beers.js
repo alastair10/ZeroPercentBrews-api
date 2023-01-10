@@ -4,7 +4,8 @@ const {
   getBeerById,
   addComment,
   updateKegVotes,
-  getLowCalBeers
+  getLowCalBeers,
+  getMostLikedBeers
 } = require('../controllers/beerController');
 const requireAuth = require("../middleware/requireAuth");
 
@@ -15,6 +16,9 @@ router.get("/", getBeers);
 
 // get low-calorie beers
 router.get("/low-cal", getLowCalBeers);
+
+// get most-liked beers
+router.get("/most-liked", getMostLikedBeers);
 
 // get one
 router.get("/:id", getBeerById);
