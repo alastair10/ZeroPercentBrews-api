@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { loginUser, registerUser, getUser } = require('../controllers/userController');
+const { loginUser, registerUser, getUser, updateSaved } = require('../controllers/userController');
 const requireAuth = require('../middleware/requireAuth');
 
 const router = express.Router();
@@ -13,5 +13,8 @@ router.post('/login', loginUser);
 
 // get user
 router.get('/:id', requireAuth, getUser);
+
+// patch user saves
+router.patch('/:id/saved', requireAuth, updateSaved);
 
 module.exports = router;
