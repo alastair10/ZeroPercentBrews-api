@@ -55,21 +55,36 @@ const getUser = async (req, res) => {
 // Update user saved beers by ID
 const updateSaved = async (req, res) => {
   const { id } = req.params;
-  const { beer_id } = req.body;
+  const { beer_id, isSaved } = req.body;
 
   if (!beer_id) {
     return res.status(400).json({ error: 'Must provide a beer_id' });
   };
 
-  const beer = await Beer.findById(beer_id);
+  if (isSaved) {
+    // const beer = await Beer.findById(beer_id);
+    const user = await User.findByIdAndUpdate(
+      { _id: id },
+      { $pullAll: { saved: [beer_id] }},
+      { new: true }
+    );
 
-  const user = await User.findByIdAndUpdate(
-    { _id: id },
-    { $addToSet: { saved: beer }},
-    { new: true }
-  );
+    res.status(200).json({ message: "OK", user_id: user._id, saved: user.saved});
 
-  res.status(200).json({ message: "OK", user_id: user._id, saved: user.saved});
+  } else {
+    const beer = await Beer.findById(beer_id);
+
+    const user = await User.findByIdAndUpdate(
+      { _id: id },
+      { $addToSet: { saved: beer }},
+      { new: true }
+    );
+
+    res.status(200).json({ message: "OK", user_id: user._id, saved: user.saved});
+  }
+ 
+
+  
 
 };
 
