@@ -63,14 +63,13 @@ const updateSaved = async (req, res) => {
   };
 
   if (isSaved) {
-    // const beer = await Beer.findById(beer_id);
     const user = await User.findByIdAndUpdate(
       { _id: id },
       { $pullAll: { saved: [beer_id] }},
       { new: true }
     );
 
-    res.status(200).json({ message: "OK", user_id: user._id, saved: user.saved});
+    res.status(200).json({ message: "Beer removed from saved", user_id: user._id, saved: user.saved});
 
   } else {
     const beer = await Beer.findById(beer_id);
@@ -81,7 +80,7 @@ const updateSaved = async (req, res) => {
       { new: true }
     );
 
-    res.status(200).json({ message: "OK", user_id: user._id, saved: user.saved});
+    res.status(200).json({ message: "Beer saved", user_id: user._id, saved: user.saved});
   };
 };
 
