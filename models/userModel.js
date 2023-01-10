@@ -20,7 +20,14 @@ const userSchema = new Schema(
       required: true,
       unique: false,
     },
-    favourites: { type: Array, default: [], required: false },
+    saved: [
+      new Schema({
+        beer_id: {
+          type: mongoose.Types.ObjectId, ref: "User",
+          required: true
+        }
+      })
+    ],
   },
   { timestamps: true }
 );
