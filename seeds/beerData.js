@@ -212,7 +212,7 @@ const data = [
     staffPicks: false
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../../images/conora.jpg',
     title: 'Corona Cero Alcohol Free',
     brand: 'Corona',
     abv: '0',
@@ -242,7 +242,7 @@ const data = [
     staffPicks: false
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../../images/doombar_zero.jpg',
     title: 'Doom Bar Zero Amber Ale',
     brand: 'Doom Bar',
     abv: '0',
@@ -365,7 +365,7 @@ const data = [
     staffPicks: false
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../../images/kopparberg_pear.jpg',
     title: 'Kopparberg Alcohol Free Pear Cider',
     brand: 'Kopparberg',
     abv: '0.05',
@@ -427,7 +427,7 @@ const data = [
     staffPicks: false
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../../images/kopparberg_mixed_fruit.jpg',
     title: 'Kopparberg Mixed Fruit Alcohol Free',
     brand: 'Kopparberg',
     abv: '0.05',
@@ -519,7 +519,7 @@ const data = [
     staffPicks: true
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../../images/peroni.jpg',
     title: 'Peroni Nastro Azzurro 0.0%',
     brand: 'Peroni',
     abv: '0.05',
@@ -601,7 +601,7 @@ const data = [
     staffPicks: false
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../../images/stella.jpg',
     title: 'Stella Artois Premium Alcohol Free Lager',
     brand: 'Stella Artois',
     abv: '0',
@@ -631,7 +631,7 @@ const data = [
     staffPicks: false
   },
   {
-    image: '../../images/beer_placeholder.jpg',
+    image: '../../images/thatchers_zero.jpg',
     title: 'Thatchers Zero Somerset Cider',
     brand: 'Thatchers',
     abv: '0.05',
