@@ -25,11 +25,11 @@ router.get("/low-cal", getLowCalBeers);
 // get most-liked beers
 router.get("/most-liked", getMostLikedBeers);
 
-// get beers by type
-router.get("/:type", getBeersByType);
-
 // get one
 router.get("/:id", getBeerById);
+
+// get beers by type
+router.get("/type/:type", getBeersByType);
 
 // add review to beer
 router.patch("/:id/comments", requireAuth, addComment);
