@@ -30,7 +30,7 @@ const data = [
     staffPicks: true
   },
   {
-    image: '../../images/conora.jpg',
+    image: '../../images/corona.jpg',
     title: 'Corona Cero Alcohol Free',
     brand: 'Corona',
     abv: '0',
@@ -152,7 +152,7 @@ const data = [
     staffPicks: false
   },
   {
-    image: '../../images/kopparberg_pear.jpg',
+    image: '../../images/koppaberg_pear.jpg',
     title: 'Kopparberg Alcohol Free Pear Cider',
     brand: 'Kopparberg',
     abv: '0.05',
