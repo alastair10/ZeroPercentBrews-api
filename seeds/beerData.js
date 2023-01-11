@@ -26,7 +26,7 @@ const data = [
       value: 3,
       realness: 5
     },
-    kegs: 1,
+    upvotes: 1,
     staffPicks: false
   },
   {
@@ -57,7 +57,7 @@ const data = [
       value: 3,
       realness: 3
     },
-    kegs: 2,
+    upvotes: 2,
     staffPicks: false
   },
   {
@@ -87,7 +87,7 @@ const data = [
       value: 3,
       realness: 2
     },
-    kegs: 3,
+    upvotes: 3,
     staffPicks: false
   },
   {
@@ -117,7 +117,7 @@ const data = [
       value: 1,
       realness: 4
     },
-    kegs: 4,
+    upvotes: 4,
     staffPicks: false
   },
   {
@@ -147,7 +147,7 @@ const data = [
       value: 4,
       realness: 5
     },
-    kegs: 5,
+    upvotes: 5,
     staffPicks: false
   },
   {
@@ -178,7 +178,7 @@ const data = [
       value: 4,
       realness: 5
     },
-    kegs: 6,
+    upvotes: 6,
     staffPicks: false
   },
   {
@@ -208,7 +208,7 @@ const data = [
       value: 3,
       realness: 4
     },
-    kegs: 7,
+    upvotes: 7,
     staffPicks: false
   },
   {
@@ -238,7 +238,7 @@ const data = [
       value: 5,
       realness: 5
     },
-    kegs: 8,
+    upvotes: 8,
     staffPicks: false
   },
   {
@@ -269,7 +269,7 @@ const data = [
       value: 2,
       realness: 2
     },
-    kegs: 9,
+    upvotes: 9,
     staffPicks: false
   },
   {
@@ -300,7 +300,7 @@ const data = [
       value: 3,
       realness: 3
     },
-    kegs: 15,
+    upvotes: 15,
     staffPicks: false
   },
   {
@@ -331,7 +331,7 @@ const data = [
       value: 5,
       realness: 4
     },
-    kegs: 6,
+    upvotes: 6,
     staffPicks: false
   },
   {
@@ -361,7 +361,7 @@ const data = [
       value: 3,
       realness: 4
     },
-    kegs: 3,
+    upvotes: 3,
     staffPicks: false
   },
   {
@@ -392,7 +392,7 @@ const data = [
       value: 3,
       realness: 3
     },
-    kegs: 9,
+    upvotes: 9,
     staffPicks: false
   },
   {
@@ -423,7 +423,7 @@ const data = [
       value: 3,
       realness: 3
     },
-    kegs: 10,
+    upvotes: 10,
     staffPicks: false
   },
   {
@@ -454,7 +454,7 @@ const data = [
       value: 3,
       realness: 3
     },
-    kegs: 4,
+    upvotes: 4,
     staffPicks: false
   },
   {
@@ -485,7 +485,7 @@ const data = [
       value: 4,
       realness: 5
     },
-    kegs: 5,
+    upvotes: 5,
     staffPicks: false
   },
   {
@@ -515,7 +515,7 @@ const data = [
       value: 4,
       realness: 5
     },
-    kegs: 4,
+    upvotes: 4,
     staffPicks: true
   },
   {
@@ -541,7 +541,7 @@ const data = [
       value: 3,
       realness: 5
     },
-    kegs: 3,
+    upvotes: 3,
     staffPicks: false
   },
   {
@@ -567,7 +567,7 @@ const data = [
       value: 3,
       realness: 5
     },
-    kegs: 2,
+    upvotes: 2,
     staffPicks: true
   },
   {
@@ -597,7 +597,7 @@ const data = [
       value: 4,
       realness: 5
     },
-    kegs: 1,
+    upvotes: 1,
     staffPicks: false
   },
   {
@@ -627,7 +627,7 @@ const data = [
       value: 2,
       realness: 4
     },
-    kegs: 2,
+    upvotes: 2,
     staffPicks: false
   },
   {
@@ -657,7 +657,7 @@ const data = [
       value: 4,
       realness: 4
     },
-    kegs: 3,
+    upvotes: 3,
     staffPicks: false
   },
 ];
