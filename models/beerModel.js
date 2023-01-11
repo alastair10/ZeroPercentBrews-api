@@ -32,6 +32,7 @@ const beerSchema = new Schema({
     realness: { type: Number, required: false },
     value: { type: Number, required: false },
   },
+  upvotes: { type: Number, require: false },
   kegs: { type: Number, require: false },
   staffPicks: { type: Boolean, require: false },
 });
