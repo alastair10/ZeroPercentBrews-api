@@ -61,7 +61,7 @@ const getLowCalBeers = async (req, res) => {
 
 // Get top most liked beers
 const getMostLikedBeers = async (req, res) => {
-  const mostLikedBeers = await Beer.find({}).sort('-kegs').limit(12);
+  const mostLikedBeers = await Beer.find({}).sort('-upvotes').limit(12);
   res.status(200).json(mostLikedBeers);
 };
 
