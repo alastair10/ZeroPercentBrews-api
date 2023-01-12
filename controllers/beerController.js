@@ -45,7 +45,7 @@ const updateKegVotes = async (req, res) => {
 
   const beer = await Beer.findByIdAndUpdate(
     { _id: id },
-    { $set: { kegs: kegs } },
+    { $set: { upvotes: kegs } },
     { new: true }
       );
   
