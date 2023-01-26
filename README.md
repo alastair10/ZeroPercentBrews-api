@@ -1,8 +1,8 @@
 # ZeroPercentBrews-API
 
-This is the API repo for the website 🔗 [ZeroPercentBrews.com]('https://www.zeropercentbrews.com/').
+This is the API repo for the website 🔗 [ZeroPercentBrews.com](https://www.zeropercentbrews.com).
 
-[The accompanying API]('https://github.com/alastair10/ZeroPercentBrews-client')
+[The accompanying Client repo](https://github.com/alastair10/ZeroPercentBrews-client)
 
 ## Purpose of site
 
