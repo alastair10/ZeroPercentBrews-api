@@ -4,6 +4,10 @@ This is the API repo for the website 🔗 [ZeroPercentBrews.com](https://www.zer
 
 [The accompanying Client repo](https://github.com/alastair10/ZeroPercentBrews-client)
 
+## Video
+
+[<img width="400px" src="https://i3.ytimg.com/vi/FMtE3SbgWtE/maxresdefault.jpg" >](https://youtu.be/FMtE3SbgWtE "ZeroPercentBrews.com Video")
+
 ## Purpose of site
 
 A community based site for users to rate and recommend non-alcoholic beers.
