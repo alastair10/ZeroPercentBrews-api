@@ -1,16 +1,18 @@
 # ZeroPercentBrews-API
+ZeroPercentBrews is a site for users to rate and recommend non-alcoholic beers.
 
-This is the API repo for the website 🔗 [ZeroPercentBrews.com](https://www.zeropercentbrews.com).
+<img src="https://media.giphy.com/media/OHdGVlXsAc4zYVwhSm/giphy.gif" width="500">
 
-[The accompanying Client repo](https://github.com/alastair10/ZeroPercentBrews-client)
 
-## Video
+Visit the fully-deployed site at [zeropercentbrews.com](https://www.zeropercentbrews.com/)
 
-[<img width="400px" src="https://i3.ytimg.com/vi/FMtE3SbgWtE/maxresdefault.jpg" >](https://youtu.be/FMtE3SbgWtE "ZeroPercentBrews.com Video")
+To see a full video run through of the site click [here](https://www.youtube.com/watch?v=FMtE3SbgWtE). (For the accompanying client project repo click [here](https://github.com/alastair10/ZeroPercentBrews-client).)
 
-## Purpose of site
+### Key features of the app
+| <img src="https://media.giphy.com/media/qTfBV0DJWI7qs1wB9l/giphy.gif" width="400"> | <img src="https://media.giphy.com/media/P7mYfm6CsepJ36wTWa/giphy.gif" width="400"> |
+|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| <img src="https://media.giphy.com/media/HoLa6hpqcaZszgY15f/giphy.gif" width="400">  | <img src="https://media.giphy.com/media/M3n9xbNVmjG1isdbLU/giphy.gif" width="400">   |
 
-A community based site for users to rate and recommend non-alcoholic beers.
 
 ## Feature Roadmap
 
@@ -37,7 +39,7 @@ A community based site for users to rate and recommend non-alcoholic beers.
 
 ## How to Explore the Code
 
-Fully deployed at [ZeroPercentBrews.com]('https://www.zeropercentbrews.com/).
+Fully deployed at [ZeroPercentBrews.com](https://www.zeropercentbrews.com/).
 
 To work with the code, once you have cloned the repository:
 
@@ -46,4 +48,4 @@ cd ZeroPercentBrews-api;
 npm run start;
 ```
 
-This will automatically open up a development version of the site at [localhost:3000]('http://localhost:3000')
+This will automatically open up a development version of the site at [localhost:3000](http://localhost:3000)
